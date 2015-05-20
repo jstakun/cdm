@@ -1,7 +1,11 @@
 package com.redhat.waw.ose.model;
 
-public class Constraints {
+import java.io.Serializable;
 
+public class Constraints implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
 	private double betweenMin = 0d;
 	private double betweenMax = Double.MAX_VALUE;
 	private double gt = 0d;
