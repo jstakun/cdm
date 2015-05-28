@@ -1,5 +1,9 @@
 package com.redhat.waw.ose.model;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class CustomerTransaction implements java.io.Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -16,6 +20,7 @@ public class CustomerTransaction implements java.io.Serializable {
 		return transactionid;
 	}
 
+	@XmlElement
 	public void setTransactionid(String transactionid) {
 		this.transactionid = transactionid;
 	}
@@ -24,6 +29,7 @@ public class CustomerTransaction implements java.io.Serializable {
 		return customerid;
 	}
 
+	@XmlElement
 	public void setCustomerid(String customerid) {
 		this.customerid = customerid;
 	}
@@ -32,6 +38,7 @@ public class CustomerTransaction implements java.io.Serializable {
 		return amount;
 	}
 
+	@XmlElement
 	public void setAmount(double amount) {
 		this.amount = amount;
 	}
@@ -40,6 +47,7 @@ public class CustomerTransaction implements java.io.Serializable {
 		return transactionDate;
 	}
 
+	@XmlElement
 	public void setTransactionDate(long transactionDate) {
 		this.transactionDate = transactionDate;
 	}
