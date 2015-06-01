@@ -6,6 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 
@@ -50,6 +51,7 @@ public class Customer implements Serializable {
 		return this.customerid;
 	}
 
+	@XmlElement
 	public void setCustomerid(String customerid) {
 		this.customerid = customerid;
 	}
@@ -58,6 +60,7 @@ public class Customer implements Serializable {
 		return this.city;
 	}
 
+	@XmlElement
 	public void setCity(String city) {
 		this.city = city;
 	}
@@ -66,6 +69,7 @@ public class Customer implements Serializable {
 		return this.country;
 	}
 
+	@XmlElement
 	public void setCountry(String country) {
 		this.country = country;
 	}
@@ -74,6 +78,7 @@ public class Customer implements Serializable {
 		return this.firstname;
 	}
 
+	@XmlElement
 	public void setFirstname(String firstname) {
 		this.firstname = firstname;
 	}
@@ -82,6 +87,7 @@ public class Customer implements Serializable {
 		return this.lastname;
 	}
 
+	@XmlElement
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
 	}
@@ -90,6 +96,7 @@ public class Customer implements Serializable {
 		return this.middlename;
 	}
 
+	@XmlElement
 	public void setMiddlename(String middlename) {
 		this.middlename = middlename;
 	}
@@ -98,6 +105,7 @@ public class Customer implements Serializable {
 		return this.phonenumber;
 	}
 
+	@XmlElement
 	public void setPhonenumber(String phonenumber) {
 		this.phonenumber = phonenumber;
 	}
@@ -106,6 +114,7 @@ public class Customer implements Serializable {
 		return this.postalcode;
 	}
 
+	@XmlElement
 	public void setPostalcode(String postalcode) {
 		this.postalcode = postalcode;
 	}
@@ -114,6 +123,7 @@ public class Customer implements Serializable {
 		return this.stateprovince;
 	}
 
+	@XmlElement
 	public void setStateprovince(String stateprovince) {
 		this.stateprovince = stateprovince;
 	}
@@ -122,6 +132,7 @@ public class Customer implements Serializable {
 		return this.streetaddress;
 	}
 
+	@XmlElement
 	public void setStreetaddress(String streetaddress) {
 		this.streetaddress = streetaddress;
 	}
@@ -130,6 +141,7 @@ public class Customer implements Serializable {
 		return this.streetaddress2;
 	}
 
+	@XmlElement
 	public void setStreetaddress2(String streetaddress2) {
 		this.streetaddress2 = streetaddress2;
 	}
