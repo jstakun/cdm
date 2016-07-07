@@ -3,6 +3,8 @@ package com.redhat.waw.iot.model;
 
 import java.io.Serializable;
 
+import org.infinispan.distribution.group.Group;
+
 public class SensorData implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -49,6 +51,7 @@ public class SensorData implements Serializable {
 		this.c = c;
 	}
 
+	@Group
 	public String getSensorId() {
 		return sensorId;
 	}
