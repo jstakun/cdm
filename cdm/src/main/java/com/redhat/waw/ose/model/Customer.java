@@ -43,6 +43,10 @@ public class Customer implements Serializable {
 	private String streetaddress;
 
 	private String streetaddress2;
+	
+	private Boolean isVerified;
+	
+	private Long verificationDateMillis;
 
 	public Customer() {
 	}
@@ -144,6 +148,22 @@ public class Customer implements Serializable {
 	@XmlElement
 	public void setStreetaddress2(String streetaddress2) {
 		this.streetaddress2 = streetaddress2;
+	}
+
+	public Boolean getIsVerified() {
+		return isVerified;
+	}
+
+	public void setIsVerified(Boolean isVerified) {
+		this.isVerified = isVerified;
+	}
+
+	public Long getVerificationDateMillis() {
+		return verificationDateMillis;
+	}
+
+	public void setVerificationDateMillis(Long verificationDateMillis) {
+		this.verificationDateMillis = verificationDateMillis;
 	}
 
 }
